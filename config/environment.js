@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'shia-boardgames',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,6 +20,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    firebase: {
+      apiKey: "AIzaSyB0r7Deee5an2yvKEUWYhTvzPb03_nV7Tg",
+      authDomain: "shia-boardgames.firebaseapp.com",
+      databaseURL: "https://shia-boardgames.firebaseio.com",
+      projectId: "shia-boardgames",
+      storageBucket: "",
+      messagingSenderId: "154004858394",
+      appId: "1:154004858394:web:817f758e34b0f75e"
     }
   };
 

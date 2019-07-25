@@ -1,0 +1,19 @@
+<form class="login" {{action "login" email password on="submit"}}>
+  <div class="row">
+    <div class="column">
+      <label for="email">Email</label>
+      <label for="password">Password</label>
+    </div>
+
+    <div class="column grow">
+      <Input @id="email" @placeholder="you@example.com" @value={{email}} />
+      <Input @id="password" @placeholder="******" @type="password" @value={{password}} />
+    </div>
+  </div>
+
+  <div class="row">
+    <button type="submit">
+      <ion-icon name="log-in"></ion-icon> Login
+    </button>
+  </div>
+</form>
